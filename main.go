@@ -27,7 +27,7 @@ func GetStockData(symbol string, daysInterval int, interval datetime.Interval) {
 		End: &datetime.Datetime{
 			Day:   time.Now().Day(),
 			Month: int(time.Now().Month()),
-			Year:  2022,
+			Year:  time.Now().Year() + 1,
 		},
 		Interval:   interval,
 		IncludeExt: false,
